@@ -1,25 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="559.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
    <children>
-      <Label layoutX="212.0" layoutY="38.0" text="Calculadora de IMC">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
+      <Label>
+         <padding>
+            <Insets right="50.0" />
+         </padding>
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin>
       </Label>
-      <TextField id="textFieldAltura" fx:id="textFieldAltura" layoutX="67.0" layoutY="95.0" promptText="Metros" />
-      <Label layoutX="67.0" layoutY="78.0" text="Altura" />
-      <TextField id="textFieldPeso" fx:id="textFieldPeso" layoutX="280.0" layoutY="95.0" promptText="Quilos" />
-      <Label layoutX="280.0" layoutY="77.0" text="Peso" />
-      <Button id="buttonCalcular" layoutX="67.0" layoutY="130.0" mnemonicParsing="false" onAction="#botaoCalcularClicado" text="Calcular" />
-      <Button id="buttonLimpar" layoutX="147.0" layoutY="130.0" mnemonicParsing="false" onAction="#botaoLimparClicado" text="Limpar" />
-      <Label layoutX="68.0" layoutY="183.0" text="Seu IMC:" />
-      <Label id="labelResultado" fx:id="labelResultado" layoutX="144.0" layoutY="183.0" text="INFORME SUA ALTURA E PESO" />
+      <Label text="Produto" GridPane.columnIndex="1" />
+      <Label layoutX="50.0" layoutY="50.0" text="Qtd de produtos" GridPane.columnIndex="2" />
+      <Label layoutX="50.0" layoutY="50.0" text="Valor do Produto" GridPane.columnIndex="3" />
+      <Label layoutX="50.0" text="Soma" GridPane.columnIndex="4" />
+      <Label text="Cliente" />
+      <Label text="Soma Total" GridPane.rowIndex="2" />
+      <Label fx:id="nome1x1" GridPane.rowIndex="1" />
+      <Label fx:id="produto2x1" text="produto2x1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label fx:id="qtd3x1" text="qtd3x1" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Label fx:id="valor4x1" text="valor4x1" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Label fx:id="soma5x1" text="soma5x1" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+      <Label fx:id="nome1x1" text="nome1x1:" GridPane.rowIndex="1" />
+      <Label fx:id="total4x2" text="total4x2" GridPane.columnIndex="4" GridPane.rowIndex="2" />
    </children>
-</Pane>
+</GridPane>
