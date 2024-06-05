@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=App
+comment0.text=\r\n\ Modela\ o\ c\u00E1lculo\ de\ IMC\r\n\ \r\n\ @author\ marceloakira\ \r\n\ @version\ 0.01\r\n
+comment1.params=
+comment1.target=App()
+comment2.params=nome\ baterias\ escapamento\ pneu
+comment2.target=App(java.lang.String,\ int,\ int,\ int)
+comment2.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ CalculadoraIMC\r\n
+comment3.params=
+comment3.target=double\ calcularTotal()
+comment3.text=\r\n\ Calcula\ o\ IMC\r\n\ \r\n\ @return\ o\ total\ de\ todo\ \r\n
+comment4.params=quantidade\ produto
+comment4.target=void\ addProdutos(int,\ int)
+comment5.params=nome
+comment5.target=void\ mudarNome(java.lang.String)
+numComments=6
